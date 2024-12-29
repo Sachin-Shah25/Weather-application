@@ -1,0 +1,240 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+      
+}
+
+#weather_container {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.weather_box {
+    width: 300px;
+    height: 100%;
+    background-color: #54416d;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#status {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -40px;
+    left: 0;
+    border-radius: 20px;
+    padding: 8px;
+    background-color: #54416d;
+    color: white;
+    padding-left: 15px;
+    font-weight: 600;
+
+}
+
+.searchbox {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+
+    .inputs {
+        width: 100%;
+
+        input {
+            width: 100%;
+            padding: 8px 5px;
+            border-radius: 50px;
+            border: none;
+            border: 1px solid gray;
+            padding-left: 10px;
+        }
+    }
+
+    .searchicon {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 100%;
+        width: 40px;
+        color: gray;
+        border: 1px solid gray;
+        cursor: pointer;
+
+        i {
+            margin-top: 5px;
+        }
+    }
+}
+
+.weathericons {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: all .5s ease-in;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.weather_temp {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;
+}
+
+.weather_area {
+    width: 100%;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    margin-top: 5 px;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.weather_speed {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: white;
+    margin-top: 8px;
+
+    span:last-child {
+        font-weight: 500;
+    }
+
+
+}
+
+.add_favourite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    font-size: 22px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: white;
+    cursor: pointer;
+    color: gray;
+}
+
+.add_weather {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.weath {
+    opacity: 1;
+}
+
+.weath_box {
+    width: 100%;
+    display: flex;
+    background-color: #54416d;
+    padding: 5px 4px;
+    margin-top: 12px;
+    padding-right: 15px;
+    border-radius: 5px;
+    opacity: 1;
+    animation: anim .1s;
+
+    .weather_img {
+        width: 100px;
+        height: 70px;
+        background-color: white;
+        border-radius: 5px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .first_box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+    }
+
+    .weath_temp_name {
+        display: flex;
+        flex-direction: column;
+
+        span:first-child {
+            margin-top: 0px;
+            font-size: 30px;
+            font-weight: 600;
+            color: white;
+        }
+
+        span:last-child {
+            margin-top: 0px;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+        }
+    }
+
+    .weather_speen {
+        display: flex;
+        flex-direction: column;
+
+        span:first-child {
+            margin-top: 0px;
+            font-size: 25px;
+            font-weight: 600;
+            color: white;
+        }
+
+        span:last-child {
+            margin-top: 0px;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+        }
+
+    }
+}
+
+@keyframes anim {
+
+    0% {
+        opacity: 0;
+        margin-top: -50px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+
+}
